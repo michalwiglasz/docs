@@ -1,6 +1,5 @@
 # Site title and subtitle. This is used in _includes/header.html
 title: 'Mergado Apps'
-subtitle: 'Documentation'
 
 # if you wish to integrate disqus on pages set your shortname here
 disqus_shortname: ''
@@ -16,6 +15,9 @@ navigation: 2
 
 # URL to source code, used in _includes/footer.html
 codeurl: 'https://developers.mergado.com'
+
+# URL to mergado
+mergadourl: 'https://app.mergado.com'
 
 # Default categories (in order) to appear in the navigation
 sections: [

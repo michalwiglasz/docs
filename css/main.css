@@ -1,4 +1,5 @@
 body {
+    margin: 0px;
     background: #f5ecd5;
     font-weight: 400;
     font-family: Arial,Helvetica,Verdana,Sans-serif;
@@ -9,10 +10,6 @@ pre, code, pre code {
     border-radius: 0;
     background-color: #f9f9f9;
     font-size: 0.85em;
-}
-
-.container {
-    max-width: 960px;
 }
 
 .highlight {
@@ -27,8 +24,25 @@ code {
     color: inherit;
 }
 
+
+h1 {
+    border-left: 10px rgba(219,203,163,0.5) solid;
+    display: table-cell;
+    position: relative;
+    font-size: 20pt;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-left: 15px;
+    margin-bottom: 0;
+}
+
 a {
     color: #009ba9;
+    text-decoration: none;
+}
+
+a:hover, a:focus, a:active {
+    text-decoration: underline;
 }
 
 #header {
@@ -39,6 +53,9 @@ a {
 
 #header a {
     color: white;
+}
+
+#header h4 a {
     font-size: 1.3em;
 }
 
@@ -61,7 +78,6 @@ a {
 #top .brand {
     position: relative;
     margin: 0;
-    top: 11px;
 }
 
 #menu {
@@ -76,11 +92,79 @@ a {
     transition: box-shadow .3s;
 }
 
+#menu .wrapper {
+    position: relative;
+    max-width: 960px;
+    margin: auto;
+}
+
+#menu ul {
+    float: left;
+}
+
+#menu ul li {
+    float: left;
+    margin-left: 1.5em;
+}
+
+#menu a:hover {
+    text-decoration: underline;
+}
+
+nav ul,
+nav ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#document {
+    position: relative;
+    min-height: 100%;
+    margin-bottom: -50px;
+    zoom: 1;
+}
+
+#document:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.document-style {
+    zoom: 1;
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+    text-align: left;
+}
+
 #footer {
-    margin: 20px 0;
-    font-size: 0.85em;
-    color: #999;
-    text-align: center;
+    position: fixed;
+    bottom: 0;
+    font-size: 10pt;
+    background: #333;
+    width: 100%;
+    box-sizing: border-box;
+    height: 50px;
+    line-height: 50px;
+}
+
+#footer #imprint {
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+    text-align: left;
+    font-style: normal;
+    color: #aaa;
+}
+
+#footer a {
+    color: #fff;
+}
+
+#content {
+    float: right;
 }
 
 #content > .page-header:first-child {
@@ -91,9 +175,23 @@ a {
     margin-top: 0;
 }
 
-
 #navigation {
+    width: 200px;
+    float: left;
+    margin-right: 40px;
     font-size: 0.9em;
+    border: 1px solid #dbcba3;
+    background: #fff;
+}
+
+#navigation ul.nav {
+    padding: 0 15px;
+}
+
+#navigation li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    list-style: none;
 }
 
 #navigation li a {
@@ -104,6 +202,36 @@ a {
 #navigation .nav-header {
     padding-left: 0;
     padding-right: 0;
+}
+
+#content-and-nav {
+    margin-top: 30px;
+}
+
+#logo {
+    background: url("../assets/logo-mergado.png") no-repeat left center;
+    color: #fff;
+    display: inline-block;
+    float: left;
+    height: 25px;
+    position: relative;
+    top: 12.5px;
+    width: 160px;
+    padding-right: 40px;
+}
+
+#logo a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+#logo a h2 {
+    height: 100%;
+    text-indent: 110%;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 0;
 }
 
 body.rtl {
@@ -136,17 +264,6 @@ table {
 td, th {
   padding: .25rem .5rem;
   border: 1px solid #e5e5e5;
-}
-
-.nav > li {
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-.nav > li > a:focus,
-.nav > li > a:hover {
-    background-color: #fff;
-    color: #009ba9;
 }
 
 .nav-header {

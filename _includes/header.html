@@ -1,6 +1,24 @@
-<div id="top">
-    <h4 class="brand"><a href="{{ site.baseurl }}/">{{ site.title }}</a>
-        {% if site.subtitle %}<small>{{ site.subtitle }}</small>{% endif %}
-    </h4>
-</div>
-<nav id="menu"></nav>
+<header id="header">
+    <div id="top">
+        <div id="logo">
+            <a href="{{ site.baseurl }}/" title="{{ site.title }}">
+                <h2>{{ site.title }}</h2>
+            </a>
+        </div>
+    </div>
+    <nav id="menu">
+        <div class="wrapper">
+            <ul>
+                <li>
+                    <a href="{{ site.baseurl }}/">Documentation</a>
+                </li>
+                <li>
+                    <a href="{{ site.baseurl }}/changelog/">Change Log</a>
+                </li>
+                <li>
+                    <a href="{{ site.baseurl }}/support/">Support</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>

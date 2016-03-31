@@ -3,8 +3,13 @@ layout: default
 title: "Getting Started"
 ---
 
-### Get Started
+# Get Started
 
 The API Reference contains low-level details on Mergado Apps APIs and codebase.
 
 You will find here documentation on Mergado Apps' HTTP APIs, PHP client, methods and hooks.
+
+{% highlight python %}
+def test_syntax_highlight():
+    print "it works!"
+{% endhighlight %}
