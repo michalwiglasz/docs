@@ -165,6 +165,7 @@ nav ol {
 
 #content {
     float: right;
+    width: 680px;
 }
 
 #content > .page-header:first-child {
@@ -176,7 +177,7 @@ nav ol {
 }
 
 #navigation {
-    width: 200px;
+    width: 230px;
     float: left;
     margin-right: 40px;
     font-size: 0.9em;
@@ -270,4 +271,21 @@ td, th {
     text-transform: uppercase;
     font-weight: bold;
     color: #555;
+}
+
+pre,
+code {
+  font-family: "Consolas", "DejaVu Sans Mono", "Lucida Sans Typewriter", monospace;
+  font-size: 15px;
+  border-radius: 0;
+}
+
+pre {
+  overflow: auto;
+  word-wrap: normal;
+  white-space: pre;
+  margin-top: 13px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #dbcba3;
 }
