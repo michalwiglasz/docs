@@ -1,0 +1,156 @@
+body {
+    background: #f5ecd5;
+    font-weight: 400;
+    font-family: Arial,Helvetica,Verdana,Sans-serif;
+}
+
+pre, code, pre code {
+    border: none;
+    border-radius: 0;
+    background-color: #f9f9f9;
+    font-size: 0.85em;
+}
+
+.container {
+    max-width: 960px;
+}
+
+.highlight {
+    background-color: #f9f9f9;
+}
+
+pre {
+    font-size: 1em;
+}
+
+code {
+    color: inherit;
+}
+
+a {
+    color: #009ba9;
+}
+
+#header {
+    min-height: 100px;
+    margin-bottom: 10px;
+    background: #333;
+}
+
+#header a {
+    color: white;
+    font-size: 1.3em;
+}
+
+#header h4 small {
+    font-size: 0.9em;
+}
+
+#header a:hover {
+    text-decoration: none;
+}
+
+#top {
+    max-width: 960px;
+    margin: auto;
+    zoom: 1;
+    height: 50px;
+    line-height: 50px;
+}
+
+#top .brand {
+    position: relative;
+    margin: 0;
+    top: 11px;
+}
+
+#menu {
+    min-height: 50px;
+    background: #69a120;
+    color: #333;
+    line-height: 50px;
+    font-size: 11pt;
+    font-weight: bold;
+    z-index: 999;
+    zoom: 1;
+    transition: box-shadow .3s;
+}
+
+#footer {
+    margin: 20px 0;
+    font-size: 0.85em;
+    color: #999;
+    text-align: center;
+}
+
+#content > .page-header:first-child {
+    margin-top: 0;
+}
+
+#content > .page-header:first-child h2 {
+    margin-top: 0;
+}
+
+
+#navigation {
+    font-size: 0.9em;
+}
+
+#navigation li a {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#navigation .nav-header {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+body.rtl {
+	direction: rtl;
+}
+
+body.rtl #header .brand {
+	float: right;
+    margin-left: 5px;
+}
+body.rtl .row-fluid [class*="span"] {
+	float: right !important;
+	margin-left: 0;
+	margin-right: 2.564102564102564%;
+}
+body.rtl .row-fluid [class*="span"]:first-child {
+	margin-right: 0;
+}
+
+body.rtl ul, body.rtl ol {
+    margin: 0 25px 10px 0;
+}
+
+table {
+  margin-bottom: 1rem;
+  border: 1px solid #e5e5e5;
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: .25rem .5rem;
+  border: 1px solid #e5e5e5;
+}
+
+.nav > li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.nav > li > a:focus,
+.nav > li > a:hover {
+    background-color: #fff;
+    color: #009ba9;
+}
+
+.nav-header {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #555;
+}
