@@ -82,7 +82,7 @@ a:hover, a:focus, a:active {
 
 #menu {
     min-height: 50px;
-    background: #69a120;
+    background: #c59721;
     color: #333;
     line-height: 50px;
     font-size: 11pt;
@@ -210,14 +210,14 @@ nav ol {
 }
 
 #logo {
-    background: url("../assets/logo-mergado.png") no-repeat left center;
+    background: url("../assets/logo-mergado-docs.png") no-repeat left center;
     color: #fff;
     display: inline-block;
     float: left;
     height: 25px;
     position: relative;
     top: 12.5px;
-    width: 160px;
+    width: 240px;
     padding-right: 40px;
 }
 
