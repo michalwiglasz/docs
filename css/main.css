@@ -289,3 +289,7 @@ pre {
   padding: 10px;
   border: 1px solid #dbcba3;
 }
+
+figure.highlight {
+    margin: 0;
+}
