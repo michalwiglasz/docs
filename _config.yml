@@ -43,7 +43,7 @@ exclude: ['bin', 'README.md']
 
 # Sass settings
 sass:
-  style: compressed
+    style: compressed
 
 # Use the kramdown Markdown renderer
 markdown: kramdown
