@@ -9,7 +9,7 @@ The API Reference contains low-level details on Mergado Apps APIs and codebase.
 
 You will find here documentation on Mergado Apps' HTTP APIs, PHP client, methods and hooks.
 
-{% highlight python %}
+```python
 def fib(n):
     a, b = 0, 1
     while a < n:
@@ -18,4 +18,4 @@ def fib(n):
     print("The Fibonacci number is {}".format(b))
 
 fib(1000)
-{% endhighlight %}
+```

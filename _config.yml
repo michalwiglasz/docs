@@ -41,6 +41,10 @@ future: true
 # Exclude non-site files
 exclude: ['bin', 'README.md']
 
+# Sass settings
+sass:
+  style: compressed
+
 # Use the kramdown Markdown renderer
 markdown: kramdown
 redcarpet:
