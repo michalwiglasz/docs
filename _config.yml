@@ -22,6 +22,7 @@ mergadourl: 'https://app.mergado.com'
 # Default categories (in order) to appear in the navigation
 sections: [
     ['doc', 'Getting Started'],
+    ['apps', 'Developing Apps'],
     ['api', 'API Reference'],
 ]
 
