@@ -12,6 +12,7 @@ Such standard form of communication is represented by the **Message API** provid
 **Important:** Be advised that -- since it provides some essential information about the contents of viewport, without which Mergado ***cannot*** display the `IFRAME` properly -- the placement and usage of **Message API** in all app's pages and viewports is mandatory. Applications that don't include Mergado Apps **Message API** (or any *equivalent* implementation) in their pages' source code will be deemed unsatisfactory.
 
 ## Installation
+
 To use the **Message API** in your app's viewports simply include the appropriate script file provided by *Mergado* into your page's HTML source. You can use either of these:
 - The minified version *(recommended)*:
 - ```html
@@ -22,7 +23,9 @@ To use the **Message API** in your app's viewports simply include the appropriat
   <script src="https://app.mergado.com/static/js/apps/MessageApi.js" async></script>`
   ```
 
-## What it does by itself
+## Usage
+
+### What it does by itself
 1. **When the `MessageAPI.js` script is loaded:**
 After the script is executed, a new global `Mergado` variable containing a singleton object representing the **Message API** is instantly available inside the app's viewport.
 
