@@ -14,13 +14,16 @@ Such standard form of communication is represented by the **Message API** provid
 ## Installation
 
 To use the **Message API** in your app's viewports simply include the appropriate script file provided by *Mergado* into your page's HTML source. You can use either of these:
+
 - The minified version *(recommended)*:
-- ```html
-  <script src="https://app.mergado.com/static/js/apps/MessageApi.min.js" async></script>`
+  
+  ```html
+  <script src="https://app.mergado.com/static/js/apps/MessageApi.min.js" async></script>
   ```
 - The non-minified one *(more appropriate for debugging purposes or to see how it works)*:
-- ```html
-  <script src="https://app.mergado.com/static/js/apps/MessageApi.js" async></script>`
+  
+  ```html
+  <script src="https://app.mergado.com/static/js/apps/MessageApi.js" async></script>
   ```
 
 ## Usage
@@ -35,8 +38,9 @@ After the script is executed, a new global `Mergado` variable containing a singl
 
 ### What you can do with it
 The `Mergado` object has a number of methods which can be used to better your application, improve its usability or overcome any limitations that are the result of strict handling of sandboxed `IFRAME`s by web browsers.
+
 Method | Parameters | Description
---- | --- | ---
+------ | ---------- | -----------
 `Mergado.tellHeight([int heightInPixels])` | `heightInPixels` (optional): Can be set in pixels (without trailing `px`), `0` or `undefined`. | The *wrapper page* will set height of app's viewport `IFRAME` to this number of pixels. If no height is passed, it will be computed automatically.
 
 ---
