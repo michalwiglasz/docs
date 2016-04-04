@@ -9,6 +9,7 @@ The primary way of displaying the application's content inside *Mergado* pages i
 
 Such standard form of communication is represented by the **Message API** provided by *Mergado* platform. It is through this ***Message Api*** that app's viewport `IFRAME` and *Mergado* wrapper page can communicate with each other.
 
+{: .important}
 **Important:** Be advised that -- since it provides some essential information about the contents of viewport, without which Mergado ***cannot*** display the `IFRAME` properly -- the placement and usage of **Message API** in all app's pages and viewports is mandatory. Applications that don't include Mergado Apps **Message API** (or any *equivalent* implementation) in their pages' source code will be deemed unsatisfactory.
 
 ## Installation
@@ -43,6 +44,5 @@ Method | Parameters | Description
 ------ | ---------- | -----------
 `Mergado.tellHeight([int heightInPixels])` | `heightInPixels` (optional): Can be set in pixels (without trailing `px`), `0` or `undefined`. | The *wrapper page* will set height of app's viewport `IFRAME` to this number of pixels. If no height is passed, it will be computed automatically.
 
----
-
-**Warning: Do not** manually *copy & paste* contents of `MessageAPI.js` file into your page's source code. **Always** include the remote `MessageAPI.js` script file provided by *Mergado* platform at `https://app.mergado.com/static/js/apps/MessageApi.js` or `https://app.mergado.com/static/js/apps/MessageApi.min.js`. This way you can be sure you use the most up-to-date version of ***Message API***.
+{: .warning}
+**Warning:** Do not manually *copy & paste* contents of `MessageAPI.js` file into your page's source code. **Always** include the remote `MessageAPI.js` script file provided by *Mergado* platform at `https://app.mergado.com/static/js/apps/MessageApi.js` or `https://app.mergado.com/static/js/apps/MessageApi.min.js`. This way you can be sure you use the most up-to-date version of ***Message API***.
