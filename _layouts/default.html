@@ -86,8 +86,39 @@
 
             if (document.querySelectorAll) orderNav();
         </script>
+
+        <script>
+            function findPos(obj) {
+                var curleft = curtop = 0;
+                if (obj.offsetParent) {
+                    do {
+                        curleft += obj.offsetLeft;
+                        curtop += obj.offsetTop;
+                    } while (obj = obj.offsetParent);
+                }
+                return [curleft,curtop];
+            }
+
+            var nav = document.querySelectorAll('#navigation')[0];
+            var originalY = findPos(nav)[1] - 40;
+
+            window.onscroll = function(e) {
+                // This value is your scroll distance from the top
+                var distanceFromTop = document.body.scrollTop;
+                // The user has scrolled to the tippy top of the page.
+                // Set appropriate style.
+                if (distanceFromTop >= originalY) {
+                    nav.className = 'sticky';
+                } else {
+                    nav.className = '';
+                }
+
+            };
+        </script>
+
         {% if site.google_analytics_id != "" %}
         {% include google_analytics.html %}
         {% endif %}
+
     </body>
 </html>
