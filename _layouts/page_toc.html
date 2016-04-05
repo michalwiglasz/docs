@@ -1,14 +1,10 @@
 ---
 layout: base
-extra_js:
-    - jquery.toc.js
 ---
 
 <div class="document-style">
     <div id="content-and-nav">
-        <div id="navigation" style="display: none">
-            {% include navigation.html %}
-        </div>
+        <div id="navigation" style="display: none"></div>
 
         <div id="content">
             {{ content }}
@@ -16,6 +12,7 @@ extra_js:
     </div>
 </div>
 
+<script src="{{ site.baseurl }}/js/jquery.toc.js"></script>
 <script>
 $(function() {
     $('#content').toc({
