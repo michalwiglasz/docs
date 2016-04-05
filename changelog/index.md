@@ -1,6 +1,7 @@
 ---
-layout: with_toc
+layout: page_toc
 title: "Change Log"
+active_item: "changelog"
 ---
 
 # Change Log

@@ -19,6 +19,13 @@ codeurl: 'https://developers.mergado.com'
 # URL to mergado
 mergadourl: 'https://app.mergado.com'
 
+# Default menu items (on order) to appear in the menu
+menu_items: [
+    ['', 'Documentation'],
+    ['changelog', 'Change Log'],
+    ['support', 'Support'],
+]
+
 # Default categories (in order) to appear in the navigation
 sections: [
     ['doc', 'Getting Started'],

@@ -3,6 +3,7 @@ layout: page
 title: "Apps and Message API"
 category: apps
 date: 2016-04-02 18:06:00
+active_item: ""
 ---
 
 The primary way of displaying the application's content inside *Mergado* pages is through the use of `IFRAME` elements. Furthermore, these `IFRAMEs` are [sandboxed](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#attr-sandbox) to eliminate security risks that may arise from using potentially untrusted content inside `IFRAMEs` that are placed in the middle of *Mergado*'s own pages. Since sandboxed `IFRAMEs` cannot speak directly with the rest of the *Mergado* page and *vice versa*, some standard form of JavaScript communication between the app's viewport and the page around it must be defined.

@@ -1,6 +1,7 @@
 ---
-layout: with_toc
+layout: page_toc
 title: "Support"
+active_item: "support"
 ---
 
 # Community and Support
