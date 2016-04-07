@@ -7,6 +7,12 @@ active_item: "changelog"
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## Mergado Apps 0.1.1
+- 2016-04-06
+
+### Added
+- New API endpoints `PATCH /rules/<id>/queries/` and `DELETE /rules/<id>/queries/<id>/` let you assign and retract queries from rules.
+
 ## Mergado Apps 0.1.0
 - 2016-03-23
 
