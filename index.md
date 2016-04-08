@@ -4,19 +4,13 @@ title: "Getting Started"
 active_item: ""
 ---
 
-# Get Started
+# Introduction
 
-The API Reference contains low-level details on Mergado Apps APIs and codebase.
+Welcome to the Mergado Apps documentation. If you are interested in the development of applications for Mergado, you are at the right place.
 
-You will find here documentation on Mergado Apps' HTTP APIs, PHP client, methods and hooks.
+Mergado is a web service that makes it possible for users to manage their product data in eshops, convert products' feeds between different formats used by Google Merchant, Facebook, Heureka.cz, Zboží.cz, etc. and provides other useful tools.
 
-```python
-def fib(n):
-    a, b = 0, 1
-    while a < n:
-        print(a, end=' ')
-        a, b = b, a+b
-    print("The Fibonacci number is {}".format(b))
+This guide should help you understand how to use Mergado APIs and develop new applications for Mergado Apps platform using our PHP framework. Use the sidebar to navigate through the guides, here is a list of guides to get started:
 
-fib(1000)
-```
+* [Setting Up]({{ site.baseurl }}/intro/setting-up.html)
+* [The Basics]({{ site.baseurl }}/intro/the-basics.html)
