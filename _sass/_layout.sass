@@ -152,15 +152,34 @@ nav
 	width: 100%
 	box-sizing: border-box
 	height: 50px
-	line-height: 50px
+	color: #999
 
-	#imprint
-		position: relative
+	.wrapper
 		width: 960px
 		margin: 0 auto
 		text-align: left
 		font-style: normal
-		color: #aaa
+		height: 100%
+		display: table
+		table-layout: fixed
+		white-space: nowrap
+		line-height: 50px
+
+	.fill
+		display: table-cell
+		width: 99%
+
+	.block
+		display: table-cell
+		height: 100%
+		padding: 0 10px
+		box-sizing: border-box
+
+		&:first-child
+			padding-left: 0
+
+		&:last-child
+			padding-right: 0
 
 	a
 		color: #fff

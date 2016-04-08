@@ -1,7 +1,15 @@
 <footer id="footer">
     <div class="wrapper">
-        <p id="imprint">
-            <a href="{{ site.mergadourl }}">Mergado</a> | <a href="{{ site.codeurl }}">Developers</a>
-        </p>
+        <div class="block">
+            <a href="{{ site.mergadourl }}">Mergado</a> |
+            <a href="{{ site.auditurl }}">Audit</a> |
+            <a href="{{ site.mergadourl }}/developers/">Developers</a> |
+            <a href="{{ site.codeurl }}">Docs</a>
+        </div>
+        <div class="fill"></div>
+        <div class="block">
+            <i>© 2011–{{ site.time | date: '%Y' }} Mergado technologies, s. r. o.</i> |
+            <a href="mailto:{{ site.mergadomail }}">Kontakt</a>
+        </div>
     </div>
 </footer>
