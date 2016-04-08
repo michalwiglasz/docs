@@ -3,12 +3,13 @@
     {% for section in site.sections %}
         {% assign attr = section[0] %}
         {% assign label = section[1] %}
+        {% assign pages = site.categories[attr] | sort:order %}
 
-        {% for page in site.categories[attr] %}
+        {% for page in pages %}
             {% if forloop.first %}
                 <li class="nav-header">{{ label }}</li>
             {% endif %}
-            <li data-order="{{ page.order }}"><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
+            <li><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
         {% endfor %}
     {% endfor %}
 </ul>
