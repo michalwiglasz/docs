@@ -13,6 +13,10 @@ All notable changes to this project will be documented in this file.
 ### Added
 - New API endpoints `PATCH /rules/<id>/queries/` and `DELETE /rules/<id>/queries/<id>/` let you assign and retract queries from rules.
 
+### Fixes
+- Correctly update a rule when `PATCH /rules/<id>/` with `data` field is issued.
+- When creating or updating a rule or a variable, the API returns 400 Bad Request if the associated element does not exist.
+
 ## Mergado Apps 0.1.0
 - 2016-03-23
 
