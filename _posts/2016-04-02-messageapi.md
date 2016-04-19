@@ -10,7 +10,7 @@ The primary way of displaying the application's content inside *Mergado* pages i
 
 Such standard form of communication is represented by the **Message API** provided by *Mergado* platform. It is through this ***Message Api*** that app's viewport `IFRAME` and *Mergado* wrapper page can communicate with each other.
 
-{: .important}
+{: .info}
 **Important:** Be advised that -- since it provides some essential information about the contents of viewport, without which Mergado ***cannot*** display the `IFRAME` properly -- the placement and usage of **Message API** in all app's pages and viewports is mandatory. Applications that don't include Mergado Apps **Message API** (or any *equivalent* implementation) in their pages' source code will be deemed unsatisfactory.
 
 ## Installation
