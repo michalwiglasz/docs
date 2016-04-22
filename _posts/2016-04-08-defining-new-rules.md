@@ -6,7 +6,7 @@ date: 2016-04-08 15:02:14
 active_item: ""
 ---
 
-All manipulation of products' data happens in rules. Rules represent the transformation between input data provided by eshop and output data sent to shopping services. For instance, the simplest rule is called `rewriting`, its definition looks like this:
+All manipulation of products' data happens in rules. Rules allow the transformation from input data provided by eshop to output data sent to shopping services. For instance, the simplest rule is called `rewriting`, its definition looks like this:
 
 ```json
 {
@@ -22,14 +22,14 @@ All manipulation of products' data happens in rules. Rules represent the transfo
 }
 ```
 
-This rule rewrites the current value with a new one usually chosen by a user (or by you, the developer). When you want to instantiate a new rule using [our API](http://docs.mergado.apiary.io/#reference/rules), you are required to provide the following information:
+This rule rewrites the current value with a new one usually chosen by the user (or by you, the developer). When you want to instantiate a new rule using [our API](http://docs.mergado.apiary.io/#reference/rules), you are required to provide the following information:
 
 - `type` - The type of rule to instantiate.
 - `data` - A list of objects in case of `1:N` relationship or an object in case of `1:1` relationship. Each object represents a rule-specific data for the rule instantiation. The field `fields` defines the name, type and other information of each field of the object for instantiation.
 
 ## Rules Defined By Application
 
-Mergado provides a list of predefined rules, which can be used to manipulate products' data. This is useful if you want to create a set of rules according to the eshops feed, the current day, the weather etc. In many cases it is very useful to define your own rule which can be instantiated by a user or even by another app.
+Mergado provides a list of predefined rules, which can be used to manipulate products' data. This is useful if you want to create a set of rules according to the eshops feed, the current day, the weather etc. In many cases it is very useful to define your own rule which can be instantiated by the user or even by another app.
 
 Each application can define one rule or several rules by exposing a URL. This URL can be set in the Developers center and will be periodically called by Mergado's backend with product's data on each rule application. The backend sends the data in the following format by a HTTP POST request:
 
