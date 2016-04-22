@@ -13,7 +13,7 @@ All notable changes to this project will be documented in this file.
 ### Added
 - API endpoint `GET /shops/<id>/info/`.
 - API endpoint `GET /projects/<id>/info/`.
-- Implemented a new communication protocol for [rule definitions](/apps/defining-new-rules.html) by applications.
+- Implemented a new communication protocol for [rule definitions]({{ site.baseurl }}/apps/defining-new-rules.html) by applications.
 - New fields `is_movable`, `is_editable` and `is_pausable` were added to the rule collection.
 
 ### Changed
