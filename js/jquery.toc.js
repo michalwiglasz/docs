@@ -61,7 +61,7 @@
 				    $(this).text()
 				);
 			});
-			// console.log(tocHTML);
+			console.log(tocHTML);
 		});
 
 		// for convenience itemNumber starts from 1
