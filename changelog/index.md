@@ -13,6 +13,7 @@ All notable changes to this project will be documented in this file.
 ### Added
 - API endpoints for statistics (see [Apiary](http://docs.mergado.apiary.io/#reference/statistics)).
 - API endpoints for product management (see [Apiary](http://docs.mergado.apiary.io/#reference/management/products))
+- API endpoint for Google Analytics (see [Apiary](http://docs.mergado.apiary.io/#reference/google)).
 
 ### Fixed
 - Creating or updating a rule did not update indicator of "change" in project, i.e. when rules were processed in a project, they were all skipped and the rule was not applied at all.
