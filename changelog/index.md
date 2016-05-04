@@ -7,6 +7,16 @@ active_item: "changelog"
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## Mergado Apps 0.2.0
+- 2015-05-04
+
+### Added
+- API endpoints for statistics (see [Apiary](http://docs.mergado.apiary.io/#reference/statistics)).
+- API endpoints for product management (see [Apiary](http://docs.mergado.apiary.io/#reference/management/products))
+
+### Fixed
+- Creating or updating a rule did not update indicator of "change" in project, i.e. when rules were processed in a project, they were all skipped and the rule was not applied at all.
+
 ## Mergado Apps 0.1.2
 - 2016-04-21
 
