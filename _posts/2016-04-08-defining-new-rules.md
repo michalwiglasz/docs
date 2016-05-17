@@ -35,6 +35,8 @@ Each application can define one rule or several rules by exposing a URL. This UR
 
 ```json
 {
+    "rule_id": "12",
+    "project_id": "1",
     "data": [
         {
             "id": "123",
@@ -66,6 +68,8 @@ The request is considered to be a success if the server replies with a `200 OK` 
 
 ```json
 {
+    "rule_id": "12",
+    "project_id": "1",
     "data": [
         {
             "id": "234",
