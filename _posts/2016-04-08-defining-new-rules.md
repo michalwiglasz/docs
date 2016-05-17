@@ -37,22 +37,26 @@ Each application can define one rule or several rules by exposing a URL. This UR
 {
     "data": [
         {
-            "@mergado_id": 123,
-            "ITEM_ID": "890",
-            "PRODUCTNAME": "Amazon Kindle Paperwhite 3",
-            "DELIVERY_DATE": "0",
-            "EAN": "0848719006099",
-            "PRICE": "2525.10",
-            "IMGURL": "https://app.mergado.com/img/890.jpg"
-        },        
+            "id": "123",
+            "data": {
+                    "ITEM_ID": "890",
+                    "PRODUCTNAME": "Amazon Kindle Paperwhite 3",
+                    "DELIVERY_DATE": "0",
+                    "EAN": "0848719006099",
+                    "PRICE": "2525.10",
+                    "IMGURL": "https://app.mergado.com/img/890.jpg"
+            }
+        },
         {
-            "@mergado_id": 234,
-            "ITEM_ID": "530",
-            "PRODUCTNAME": "Epson LX 100 EPS",
-            "DELIVERY_DATE": "3",
-            "EAN": "0010313601581",
-            "PRICE": "185.10",
-            "IMGURL": "https://app.mergado.com/img/530.jpg"
+            "id": "234",
+            "data": {
+                "ITEM_ID": "530",
+                "PRODUCTNAME": "Epson LX 100 EPS",
+                "DELIVERY_DATE": "3",
+                "EAN": "0010313601581",
+                "PRICE": "185.10",
+                "IMGURL": "https://app.mergado.com/img/530.jpg"
+            }
         }
     ]
 }
@@ -62,10 +66,12 @@ The request is considered to be a success if the server replies with a `200 OK` 
 
 ```json
 {
-    "data": [     
+    "data": [
         {
-            "@mergado_id": 234,
-            "DELIVERY_DATE": "0"
+            "id": "234",
+            "data": {
+                "DELIVERY_DATE": "0"
+            }
         }
     ]
 }
