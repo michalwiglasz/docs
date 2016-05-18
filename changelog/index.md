@@ -7,8 +7,19 @@ active_item: "changelog"
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## Mergado Apps 0.2.1
+- 2016-05-18
+
+### Added
+- API endpoints for notifications (see [Apiary](http://docs.mergado.apiary.io/#reference/management/notifications)).
+- API endpoints for Mergado audits (see [Apiary](http://docs.mergado.apiary.io/#reference/feed-audits))
+- API endpoint for querying products (see [Apiary](http://docs.mergado.apiary.io/#reference/management/products/query-products))
+
+### Changed
+- The field `data` in product collections was returning input data. Now it returns the output data and the input data are listed in a new field `input_data`.
+
 ## Mergado Apps 0.2.0
-- 2015-05-04
+- 2016-05-04
 
 ### Added
 - API endpoints for statistics (see [Apiary](http://docs.mergado.apiary.io/#reference/statistics)).
