@@ -17,6 +17,7 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 - The field `data` in product collections was returning input data. Now it returns the output data and the input data are listed in a new field `input_data`.
+- Mergado App IFRAME API (*Maia*) now has two new methods: `startDownload` and `openWindow`. Also a bug was fixed when calling `tellHeight` method repeatedly.
 
 ## Mergado Apps 0.2.0
 - 2016-05-04
