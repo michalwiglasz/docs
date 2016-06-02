@@ -7,6 +7,12 @@ active_item: "changelog"
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## Mergado Apps 0.2.2
+- 2016-06-01
+
+### Added
+- Mergado now calls app's `constructor` / `destructor` hooks when enabling or disabling an app, respectively (see [hooks]({{ site.baseurl }}/apps/app-hooks.html)).
+
 ## Mergado Apps 0.2.1
 - 2016-05-18
 
