@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Apps IFRAME API"
+title: "IFRAME API"
 category: apps
 date: 2016-05-24 14:39:00
 active_item: ""
