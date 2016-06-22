@@ -4,7 +4,7 @@ title: "Writing Rules"
 category: apps
 date: 2016-04-08 15:02:14
 active_item: ""
-order: 3
+order: 4
 ---
 
 All manipulation of products' data happens in rules. Rules allow the transformation from input data provided by eshop to output data sent to shopping services. For instance, the simplest rule is called `rewriting`, its definition looks like this:
@@ -86,3 +86,23 @@ This minimalistic version is highly recommended as it is more efficient for both
 
 {: .info}
 **Note:** If you want to hide a product's element value, return its value set to an empty string `""` or to a `null`, both values are treated the same in Mergado.
+
+## Instantiating New Rules
+
+Defining new rules makes it possible for end-users to create (or instantiate) new application-defined rules (if the application enables this). Now you might be wondering why shouldn't it be possible to instantiate application-defined rules in the Mergado REST API. This is of course possible, although it may seem a bit tricky at first. All application-defined rules have the same definition, which looks like this:
+
+```json
+{
+    "fields": [
+        {
+            "required": true,
+            "type": "STRING",
+            "name": "app_rule_type"
+        }
+    ],
+    "type": "app",
+    "relationship": "1:1"
+}
+```
+
+Each app can define several rules (with unique names), the definition above says that before an app instantiate a new rule in a project, it is required to provide an `app_rule_type`. This fields is a unique ID of the application-defined rule generated in the developers center from the name of the app and the name of the rule.
