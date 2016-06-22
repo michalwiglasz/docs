@@ -3,7 +3,7 @@
     {% for section in site.sections %}
         {% assign attr = section[0] %}
         {% assign label = section[1] %}
-        {% assign pages = site.categories[attr] | sort:order %}
+        {% assign pages = site.categories[attr] | sort:'order' %}
 
         {% for page in pages %}
             {% if forloop.first %}

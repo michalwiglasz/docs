@@ -4,7 +4,7 @@ title: "The Basics"
 category: intro
 date: 2016-04-08 12:44:47
 active_item: ""
-order: 2
+order: 1
 ---
 
 Mergado Apps is a way to implement new functionality that can be used by users or agencies of Mergado. This functionality is created and maintained by third-party developers or companies, i.e. Mergado team does not take responsibility for non-working applications.

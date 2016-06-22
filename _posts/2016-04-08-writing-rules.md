@@ -1,9 +1,10 @@
 ---
 layout: page
-title: "Defining New Rules"
+title: "Writing Rules"
 category: apps
 date: 2016-04-08 15:02:14
 active_item: ""
+order: 3
 ---
 
 All manipulation of products' data happens in rules. Rules allow the transformation from input data provided by eshop to output data sent to shopping services. For instance, the simplest rule is called `rewriting`, its definition looks like this:
@@ -64,7 +65,7 @@ Each application can define one rule or several rules by exposing a URL. This UR
 }
 ```
 
-The request is considered to be a success if the server replies with a `200 OK` HTTP status code and the body of the response contains products' data in the same format. The application is not required to return all products, it is required to return only the products and elements that were processed and should be changed in some way (except for the special `@mergado_id` element which is used to uniquely identify each product). For example, the server's response might be:
+The request is considered to be a success if the server replies with a `200 OK` HTTP status code and the body of the response contains products' data in the same format. The application is not required to return all products, it is required to return only the products and elements that were processed and should be changed in some way. For example, the server's response might be:
 
 ```json
 {
