@@ -78,6 +78,7 @@ title: \"#{title}\"
 category: #{category}
 date: #{now}
 active_item: \"\"
+order: 1
 ---
 
 END
