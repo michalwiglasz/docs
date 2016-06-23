@@ -25,8 +25,8 @@ All manipulation of products' data happens in rules. Rules allow the transformat
 
 This rule rewrites the current value with a new one usually chosen by the user (or by you, the developer). When you want to instantiate a new rule using [our API](http://docs.mergado.apiary.io/#reference/rules), you are required to provide the following information:
 
-- `type` - The type of rule to instantiate.
-- `data` - A list of objects in case of `1:N` relationship or an object in case of `1:1` relationship. Each object represents a rule-specific data for the rule instantiation. The field `fields` defines the name, type and other information of each field of the object for instantiation.
+- `type` -- The type of rule to instantiate.
+- `data` -- A list of objects in case of `1:N` relationship or an object in case of `1:1` relationship. Each object represents a rule-specific data for the rule instantiation. The field `fields` defines the name, type and other information of each field of the object for instantiation.
 
 ## Rules Defined By Application
 
