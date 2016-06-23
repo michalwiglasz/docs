@@ -44,11 +44,8 @@ p
 	&.warning
 		color: #333
 		padding: 10px
-		border: 1px solid lighten($submenu-background-color, 20%)
-		background: #ffe288
-
-		code
-			background-color: #fff9d6
+		border: 1px solid #e9b952
+		background: #fee6b2
 
 	&.info
 		color: #333
@@ -62,6 +59,19 @@ a
 
 	&:hover, &:focus, &:active
 		text-decoration: underline
+
+ul, ol
+	padding-left: 30px
+
+	ul
+		list-style-type: square
+		padding-left: 30px
+
+	p
+		margin: 0
+
+	li
+		margin: 5px 0px
 
 #header
 	min-height: 100px
@@ -81,7 +91,7 @@ a
 		text-decoration: none
 
 #top
-	max-width: 960px
+	max-width: $page-width
 	margin: auto
 	zoom: 1
 	height: 50px
@@ -104,7 +114,7 @@ a
 
 	.wrapper
 		position: relative
-		max-width: 960px
+		max-width: $page-width
 		margin: auto
 
 	ul
@@ -112,6 +122,7 @@ a
 
 		li
 			float: left
+			margin: 0
 			margin-left: 1.5em
 
 			&.active a
@@ -140,7 +151,7 @@ nav
 .document-style
 	zoom: 1
 	position: relative
-	width: 960px
+	width: $page-width
 	margin: 0 auto
 	text-align: left
 
@@ -158,7 +169,7 @@ nav
 	z-index: 9999
 
 	.wrapper
-		width: 960px
+		width: $page-width
 		margin: 0 auto
 		text-align: left
 		font-style: normal
@@ -171,7 +182,7 @@ nav
 	color: $text-color
 	line-height: $base-line-height
 	float: right
-	width: 680px
+	width: $content-width
 
 	> .page-header:first-child
 		margin-top: 0
@@ -179,7 +190,7 @@ nav
 			margin-top: 0
 
 #navigation
-	width: 230px
+	width: $navigation-width
 	float: left
 	margin-right: 40px
 	font-size: 0.9em
@@ -192,6 +203,7 @@ nav
 		padding: 0
 
 	li
+		margin: 0
 		padding-top: 5px
 		padding-bottom: 5px
 		list-style: none
@@ -265,11 +277,11 @@ tbody
 
 	tr
 		background-color: $white
-		border: 1px solid lighten($submenu-background-color, 35%)
+		border: 1px solid $table-border-color
 		border-top: none
 
 	td
-		border-left: 1px dotted lighten($submenu-background-color, 30%)
+		border-left: 1px dotted $table-border-color
 
 
 td, th
@@ -287,19 +299,19 @@ hr
 
 code
 	color: inherit
-	padding: 0px 4px
-	border: 1px solid rgba($submenu-background-color, 0.5)
-	border-radius: 3px !important
 	display: inline-block
+
+p, li
+	& > code
+		padding: 0px 4px
+		background-color: $black-alpha-color
 
 pre code
 	border: none
 
 pre, code, pre code
-	background-color: $content-bg-color
 	font-family: $monospace-font-family
 	font-size: 10pt
-	border-radius: 0
 
 pre
 	font-size: 1em

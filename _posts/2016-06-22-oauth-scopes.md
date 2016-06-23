@@ -39,7 +39,7 @@ Here is a list of all scopes and their short description currently used in Merga
 | **project.products.write**   | Client is authorized to modify project's products.    |
 | **project.stats.read**       | Client is authorized to access project's statistics.  |
 | **project.stats.write**      | Client is authorized to modify project's statistics.  |
-| **project.feedaudits.read**  | Client is authorized to access project's feedauidts.  |
-| **project.feedaudits.write** | Client is authorized to create project's feedauidts.  |
+| **project.feedaudits.read**  | Client is authorized to access project's feedaudits.  |
+| **project.feedaudits.write** | Client is authorized to create project's feedaudits.  |
 | **project.tasks.read**       | Client is authorized to read project's tasks.         |
 | **project.tasks.write**      | Client is authorized to create project's tasks.       |
