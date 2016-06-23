@@ -46,9 +46,9 @@ The `Mergado` object has a number of methods which can be used to better your ap
 
 Method | Parameters | Description
 ------ | ---------- | -----------
-`Mergado.tellHeight([int heightInPixels])` | - `heightInPixels` (optional): Can be set in pixels, `0` or `undefined` | The *wrapper page* will set height of app's viewport `IFRAME` to this number of pixels. If no height is passed, it will be determined automatically.
-`Mergado.startDownload(string url)` | - `url`: Target URL to start download from | A new mini window will be popped up having *target URL* as its location. The window will be closed after 10 seconds; until then the target server has time to make a proper response. In this case most probably in a form of a file download.
-`Mergado.openWindow(string url)` | - `url`: Target page URL | A new browser window will be opened having the *target URL* as its location. This window will NOT automatically close itself.
+`Mergado.tellHeight(``[int heightInPixels])` | `heightInPixels` (optional): Can be set in pixels, `0` or `undefined` | The *wrapper page* will set height of app's viewport `IFRAME` to this number of pixels. If no height is passed, it will be determined automatically.
+`Mergado.startDownload(``string url)` | `url`: Target URL to start download from | A new mini window will be popped up having *target URL* as its location. The window will be closed after 10 seconds; until then the target server has time to make a proper response. In this case most probably in a form of a file download.
+`Mergado.openWindow(``string url)` | `url`: Target page URL | A new browser window will be opened having the *target URL* as its location. This window will NOT automatically close itself.
 
 {: .warning}
 **Warning:** Do not manually *copy & paste* contents of `MessageAPI.js` file into your page's source code. Always include the remote `MessageAPI.js` script file provided by Mergado platform at `https://app.mergado.com/static/js/apps/MessageApi.js` or `https://app.mergado.com/static/js/apps/MessageApi.min.js`. This way you can be sure you use the most up-to-date version of Maia.
