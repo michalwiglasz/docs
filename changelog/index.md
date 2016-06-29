@@ -20,12 +20,12 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 - Mergado now calls app's constructor/destructor hooks when enabling or disabling an app, respectively (see [hooks]({{ site.baseurl }}/apps/app-hooks.html)).
-- API endpoints for [tasks management](http://docs.mergado.apiary.io/#reference/management/tasks).
-- API endpoints for various [logs and actions](http://docs.mergado.apiary.io/#reference/management/logs).
+- API endpoints for [tasks management](http://docs.mergado.apiary.io/#reference/core/tasks).
+- API endpoints for various [logs and actions](http://docs.mergado.apiary.io/#reference/core/logs).
 - Support `filter_by` query string parameter in [statistics](http://docs.mergado.apiary.io/#reference/statistics/products/statistics-of-all-products).
 - Allow POST for requesting [products' statistics](http://docs.mergado.apiary.io/#reference/statistics/products/statistics-of-all-products-using-post).
-- Added more information (about connection with shopping services) to the _[eshop info](http://docs.mergado.apiary.io/#reference/management/eshops/show-eshop-info)_ endpoint.
-- Added endpoint for listing [user's notifications](http://docs.mergado.apiary.io/#reference/management/notifications/get-users-notifications).
+- Added more information (about connection with shopping services) to the _[eshop info](http://docs.mergado.apiary.io/#reference/core/eshops/show-eshop-info)_ endpoint.
+- Added endpoint for listing [user's notifications](http://docs.mergado.apiary.io/#reference/core/notifications/get-users-notifications).
 
 ### Fixed
 - Parameter `fields` in API of statistics.
@@ -35,9 +35,9 @@ All notable changes to this project will be documented in this file.
 - 2016-05-18
 
 ### Added
-- API endpoints for [notifications](http://docs.mergado.apiary.io/#reference/management/notifications).
+- API endpoints for [notifications](http://docs.mergado.apiary.io/#reference/core/notifications).
 - API endpoints for [XML feed audits](http://docs.mergado.apiary.io/#reference/feed-audits).
-- API endpoint for [querying products](http://docs.mergado.apiary.io/#reference/management/products/query-products).
+- API endpoint for [querying products](http://docs.mergado.apiary.io/#reference/core/products/query-products).
 
 ### Changed
 - The field `data` in product collections was returning input data. Now it returns the output data and the input data are listed in a new field `input_data`.
@@ -48,7 +48,7 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 - API endpoints for [statistics](http://docs.mergado.apiary.io/#reference/statistics).
-- API endpoints for [product management](http://docs.mergado.apiary.io/#reference/management/products).
+- API endpoints for [product management](http://docs.mergado.apiary.io/#reference/core/products).
 - API endpoint for [Google Analytics](http://docs.mergado.apiary.io/#reference/google).
 
 ### Fixed
