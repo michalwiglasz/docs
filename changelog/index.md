@@ -7,6 +7,14 @@ active_item: "changelog"
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## Mergado Apps 0.2.3
+- 2016-06-29
+
+### Added
+- List of categories available on [Heureka](http://docs.mergado.apiary.io/#reference/heureka/heureka-categories).
+- Google Analytics for all [eshop data](http://docs.mergado.apiary.io/#reference/google/analytics/eshop-data).
+- List of supported [XML formats](http://docs.mergado.apiary.io/#reference/0/xml-formats/eshop-data) in Mergado.
+
 ## Mergado Apps 0.2.2
 - 2016-06-01
 
