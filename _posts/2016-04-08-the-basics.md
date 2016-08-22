@@ -13,7 +13,7 @@ Mergado Apps is a way to implement new functionality that can be used by users o
 
 All applications are hosted on _Mergado App Cloud_. Each application has its own repository and a database. App Cloud also helps developers test and develop their applications, i.e. there is no need to install Apache and PHP on localhost. The development environment can be accessed with SFTP or SSH.
 
-## Supported Technologies By App Cloud
+## Technologies Supported By App Cloud
 
 Currently, applications written on Mergado platform can be written only in **PHP** and only **MySQL** is supported for data storage. Other programming languages (e.g. Python) and databases (e.g. PostgreSQL, Redis) are planned in the future.
 
