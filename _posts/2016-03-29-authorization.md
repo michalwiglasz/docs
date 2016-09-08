@@ -13,7 +13,7 @@ If you are familiar with the OAuth protocol, you already know that with every ac
 * Online mode, which is similar to the `authorization_code` grant in OAuth 2.0.
 * Offline mode, which is similar to the `refresh_token` grant type.
 
-## Online Mode
+## Online mode
 
 An access token is obtained using the `autherization_code` grant defined in the OAuth 2.0 authorization framework. This mode is used when the end-user (aka the resource owner) is capable of receiving incoming requests (typically via redirection in a web browser). If the end-user is not interacting with a web browser (i.e. is not currently working in Mergado) but an application needs to access a protected resource, the `refresh_token` grant described in the _Offline Mode_ section must be used.
 
@@ -50,7 +50,7 @@ To obtain an access token using the `authorization_code` grant type, the followi
    }
    ```
 
-## Offline Mode
+## Offline mode
 
 An access token is obtained using the `refresh_token` grant type. When an application needs to access protected resource (e.g. to hide/unhide some products) but the end-user cannot interact with Mergado in a web browser, we say that it works in the offline mode.
 

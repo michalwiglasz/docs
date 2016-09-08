@@ -14,7 +14,7 @@ google_analytics_id: ''
 navigation: 2
 
 # URL to source code, used in _includes/footer.html
-codeurl: 'https://developers.mergado.com'
+codeurl: 'http://mergado.github.io/docs/'
 
 # URL to mergado
 mergadourl: 'https://app.mergado.com'

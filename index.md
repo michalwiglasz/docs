@@ -12,5 +12,5 @@ Mergado is a web service that makes it possible for users to manage their produc
 
 This guide should help you understand how to use Mergado APIs and develop new applications for Mergado Apps platform using our PHP framework. Use the sidebar to navigate through the guides, here is a list of guides to get started:
 
-* [The Basics]({{ site.baseurl }}/intro/the-basics.html)
+* [The Basics]({{ site.baseurl }}/apps/the-basics.html)
 * [Setting Up]({{ site.baseurl }}/apps/setting-up.html)

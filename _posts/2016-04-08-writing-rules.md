@@ -28,7 +28,7 @@ This rule rewrites the current value with a new one usually chosen by the user (
 - `type` -- The type of rule to instantiate.
 - `data` -- A list of objects in case of `1:N` relationship or an object in case of `1:1` relationship. Each object represents a rule-specific data for the rule instantiation. The field `fields` defines the name, type and other information of each field of the object for instantiation.
 
-## Rules Defined By Application
+## Rules defined by application
 
 Mergado provides a list of predefined rules, which can be used to manipulate products' data. This is useful if you want to create a set of rules according to the eshops feed, the current day, the weather etc. In many cases it is very useful to define your own rule which can be instantiated by the user or even by another app.
 
@@ -87,7 +87,7 @@ This minimalistic version is highly recommended as it is more efficient for both
 {: .info}
 **Note:** If you want to hide a product's element value, return its value set to an empty string `""` or to a `null`, both values are treated the same in Mergado.
 
-## Instantiating New Rules
+## Instantiating new rules
 
 Defining new rules makes it possible for end-users to create (or instantiate) new application-defined rules (if the application enables this). Now you might be wondering why shouldn't it be possible to instantiate application-defined rules in the Mergado REST API. This is of course possible, although it may seem a bit tricky at first. All application-defined rules have the same definition, which looks like this:
 
