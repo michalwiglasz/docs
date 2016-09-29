@@ -7,6 +7,13 @@ active_item: "changelog"
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## Mergado Apps 0.2.4
+- 2016-09-29
+
+### Added
+- Field `shop_name` in Feedaudit resources.
+- New endpoint for sending notifications to users (Issue [#21](https://github.com/mergado/mergado-apps/issues/21).
+
 ## Mergado Apps 0.2.3
 - 2016-06-29
 

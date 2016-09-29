@@ -17,7 +17,8 @@ Here is a list of all scopes and their short description currently used in Merga
 | ``user.write``               | Client is authorized to modify a user.                   |
 | ``user.shops.read``          | Client is authorized to access user's eshops.            |
 | ``user.shops.write``         | Client is authorized to modify user's eshops.            |
-| ``user.notify.read``         | Client is authorized to read user's notifications        |
+| ``user.notify.read``         | Client is authorized to read user's notifications.       |
+| ``user.notify.write``        | Client is authorized to send notifications to users.     |
 | ``shop.read``                | Client is authorized to access eshop's information.      |
 | ``shop.write``               | Client is authorized to modify an eshop.                 |
 | ``shop.ga.read``             | Client is authorized to access Google Analytics.         |
