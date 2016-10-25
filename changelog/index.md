@@ -12,7 +12,10 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 - Field `shop_name` in Feedaudit resources.
-- New endpoint for sending notifications to users (Issue [#21](https://github.com/mergado/mergado-apps/issues/21).
+- New endpoint for sending notifications to users (Issue [#21](https://github.com/mergado/mergado-apps/issues/21)).
+
+### Fixed
+- Notification scopes (Issue [#22](https://github.com/mergado/mergado-apps/issues/22)).
 
 ## Mergado Apps 0.2.3
 - 2016-06-29
